@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="AdToDo.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="icon" href="Cristiano_Ronaldo_w.png">
+    <link rel="stylesheet" type="text/CSS" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.5.1.js"></script>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="inner">
+                        <h4>ToDo List</h4>
+                        <input type="text" placeholder="Event Name" class="text" id="name" required><br>
+                        <input type="time" placeholder="Event Time" class="text1" id="time"><br>
+                        <input type="date" placeholder="Event Date" class="text" id="date"><br><br>
+
+                        <input type="button" onclick="rep()" value="Add List" class="click" id="adds">
+                        <input type="button" value="Hide/Show" class="click1" id="toggle">
+
+                        <p class="note">All Your Input Data Are Been Stored In Your PC Local Storage</p>
+
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="inner2">
+                        <h3>Pending List</h3>
+                        <div class="list">
+                            <div id="wrapper">
+                                
+                                <ul id="unlist">
+                                    
+                                </ul>
+                                <input type="button" onclick="de()" id="del" class="remove"value="Remove All">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="bootstrap.min.js"></script>
+<script src="AdToDo.js"></script>
+</body>
+</html>
